@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en-US" onclick="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Play Chess Online for Free - Chess.Cool</title>
+    <meta name="description" content="Play chess online with real people from all over the world. Play bullet, blitz, rapid, classic or correspondence chess. Solve puzzles, play against the computer. Completely free!">
+
+                                        
+    <link rel="stylesheet" type="text/css" href="http://chess.cool/css/figures/pieces/alpha.css?834">
+
+    <script>
+    var App = App || {};
+        App.chessCool = true;
+        App.Ads = App.Ads || {};
+    var sounds_on = true; var file_ext = 'html'; var site_url = 'http://chess.cool'; var src_version = 834; var css_url = 'http://chess.cool/css'; App.sandbox = false;
+    var sockjs_params = {
+        urls: ['http://rt.chess.cool:9991/sjs', 'http://rt.chess.cool/sjs_9992',
+            'http://rt.chess.cool:9993/sjs', 'http://rt.chess.cool/sjs_9991',
+            'http://rt.chess.cool:9994/sjs', 'http://rt.chess.cool/sjs_9993',
+            'http://rt.chess.cool:9992/sjs', 'http://rt.chess.cool/sjs_9994'],
+        unified_url: 'http://rt.chess.cool/sjs'
+    };
+    var sio_params = {
+        url: 'http://rt.chess.cool'
+    };
+    var white_col = ''; var black_col = '';
+    var cs_user = {
+        id: '0',
+        login: '',
+        figures_type: "alpha",
+        board_type: "green_marble",
+        board_size: "small",
+        board_hl_type: "hl_type_border",
+        board_hl_my_moves: true,
+        board_hl_enemy_moves: true,
+        random_id: '912134149',
+        timezone: 'Europe/London',
+        timezoneTitle: '+01:00 Europe/London',
+        noadv: false,
+        advanced: false    };
+    App.onloadHandlers = [];
+    App.adblockDetected = true;
+
+    var uChannel = 'a1c9525ee1ef712fd9e453373b465767'; var uS = 'a1c9525ee1ef712fd9e453373b465767';
+    var isAuth = false;
+    var serverTimeOnLoad = 'Mon, 06 Jul 2020 12:52:01 +0300';
+    var serverTimeZone = 'Europe/Moscow';
+    var clientTimeOnLoad = new Date();
+    var userAgent = "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/83.0.4103.116 Safari\/537.36";
+    var uInfoMove = function() {};
+    var uInfoOver = function() {};
+    var uInfoOut = function() {};
+
+    var _gaq = window._gaq || [];
+    
+    </script>
+
+
+    <script>
+        App.CHESS_COOL = true;
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="http://chess.cool/cache/merged-1_cool_main-834.css">
+
+        
+    <link rel="stylesheet" type="text/css" href="http://chess.cool/cache/merged-cool_overrides-834.css">
+
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-4091164-2', 'chess.cool');
+    ga('send', 'pageview');
+
+</script></head>
+<body ng-app="cs" id="ng-app" class="chess-cool">
+
+<div class="Wrapper">
+    <div id="main-content"">
+    <header class="bg-super-light-1">
+        <i class="fa fa-bars fa-border xs-show top-menu-toggle"></i>
+        <a href="/"><img src="/i/cool/logo-05.png" class="pull-left logo" alt="Chess.Cool Logo" /></a>
+        <!--                <h1 class="pull-left">Chess.Cool</h1>-->
+        <div class="pull-left header-text">
+            The simplest way to play chess online<span> with people from all over the world. For free</span>!
+        </div>
+        <div class="clearfix"></div>
+    </header>
+    <div class="cool-top-menu">
+                    
+<div class="top-menu-container">
+    <ul class="nav-with-dropdowns top-menu">
+        <div class="align-center xs-show top-menu-header">Navigation</div>
+
+                    <li>
+                <a href="https://chess.cool/" title="Go to Home Page"><i class="fa fa-home fa-fw"></i></a>
+            </li>
+            <li>
+                <a href="https://chess.cool/user/sign_in.html"><i class="fa fa-sign-in-alt fa-fw"></i> Sign In</a>
+            </li>
+            <li>
+                <a href="https://chess.cool/user/reg.html"><i class="fa fa-user-plus fa-fw"></i> Sign Up</a>
+            </li>
+                <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="https://chess.cool/play/index.html">
+                <i class="fa fa-gamepad fa-fw"></i>
+                Play Chess                <i class="icon-chevron-down caret-marker"></i>
+            </a>
+            <ul class="dropdown-menu">
+                                <li><a href="https://chess.cool/play/index.html"><i class="fa fa-users fa-fw"></i> Play with Other Players</a></li>
+                <li><a href="https://chess.cool/play/tournaments.html"><i class="fa fa-users fa-fw"></i> Tournaments</a></li>
+                <li><a class="tooltip-right" data-original-title="Play without sign up" href="https://chess.cool/play/random.html"><i class="fa fa-question fa-fw"></i> Random Game</a></li>
+                <li><a class="tooltip-right" data-original-title="Play without sign up" href="https://chess.cool/play/with_friend.html"><i class="fa fa-address-book fa-fw"></i> Play with a Friend</a></li>
+                <li><a class="tooltip-right" data-original-title="Play without sign up" href="https://chess.cool/play/with_computer.html"><i class="fa fa-microchip fa-fw"></i> Play Against the Computer</a></li>
+                <li><a href="https://chess.cool/play/battle.html"><i class="fa fa-dice fa-fw"></i> Battle <span class="label label-important">NEW</span></a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="https://chess.cool/view/index.html?action=now" class="dropdown-toggle">
+                <i class="fa fa-eye fa-fw"></i>
+                View Games                <i class="icon-chevron-down caret-marker"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="https://chess.cool/view/index.html?action=now">
+                        <i class="fa fa-fire fa-fw"></i> Current Games                    </a>
+                </li>
+                <li>
+                    <a href="https://chess.cool/view/index.html?action=logs">
+                        <i class="fa fa-database fa-fw"></i> Finished Games                    </a>
+                </li>
+                <li>
+                    <a href="https://chess.cool/view/index.html?action=search">
+                        <i class="fa fa-search fa-fw"></i> Search games                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="https://chess.cool/user/rating.html">
+                <i class="fa fa-users fa-fw"></i>
+                Community                <i class="icon-chevron-down caret-marker"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="https://chess.cool/user/rating.html"><i class="fa fa-star fa-fw"></i> Rating</a></li>
+                <li><a href="https://chess.cool/user/online.html"><i class="fa fa-check fa-fw"></i> Who Is Online?</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="https://chess.cool/puzzles.html">
+                <i class="fa fa-graduation-cap fa-fw"></i>
+                Learn Chess                <i class="icon-chevron-down caret-marker"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="https://chess.cool/puzzles.html"><i class="fa fa-check-square fa-fw"></i> Chess Puzzles</a></li>
+                <li><a href="https://chess.cool/puzzles/challenge"><i class="fa fa-check-square fa-fw"></i> Chess Puzzles Tournament</a></li>
+                <li><a href="https://chess.cool/library/openings.html"><i class="fa fa-book fa-fw"></i> Chess Openings</a></li>
+                <li><a href="https://chess.cool/tools/editor.html"><i class="fa fa-table fa-fw"></i> Board Editor</a></li>
+            </ul>
+        </li>
+            </ul>
+</div>                <div class="clearfix"></div>
+    </div>
+
+    
+    
+    
+
+    
+    <div id="content-container" class="main-content">
+        <!--<h1>Play chess online</h1>-->
+
+<div class="landing-cool relative" style="margin-top: 30px;">
+
+    <div class="hero-unit box-shadow">
+
+        <h1>Play Chess Online for Free</h1>
+
+        <div class="hero-unit-inner relative " >
+
+            <p class="redLine size14">
+                Chess.Cool is a great place to play <strong>chess online</strong> with real players in real time.
+                You do not need any software other than your browser.
+                To start playing chess simply create the game with time control you want and wait a few seconds for the opponent or join one of the existed games.
+            </p>
+            <p class="redLine size14">And it's completely free. Good luck!</p>
+
+            <div class="b3row">
+                <div class="col-md-8">
+
+                    <ul class="features-list">
+                        <li><i class="icon-ok"></i> Unlimited games</li>
+                        <li><i class="icon-ok"></i> Unlimited <a href='https://chess.cool/play/tournaments.html'>chess tournaments</a></li>
+                        <li><i class="icon-ok"></i> <a href='https://chess.cool/play/index.html'>Play rated chess games with other players</a></li>
+                        <li><i class="icon-ok"></i> Personal statistics and progress tracking</li>
+                        <li><i class="icon-ok"></i> Automatic games analysis</li>
+                        <li><i class="icon-ok"></i> Fischer chess</li>
+                        <li><i class="icon-ok"></i> Tens of thousands of <a href='https://chess.cool/puzzles.html'>chess puzzles</a></li>
+                        <li><i class="icon-ok"></i> <a href="https://chess.cool/play/with_computer.html">Play chess against the computer</a></li>
+                        <li><i class="icon-ok"></i> <a href='https://chess.cool/play/with_friend.html'>Play with your friends</a> and meet new people</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="relative" style="margin: 70px 0 25px;">
+                        <h4 class="align-center" >
+                            <a class="very-big-btn btn btn-success" href="https://chess.cool/user/reg.html" style="padding: 25px; font-size: 34px; line-height: 25px;">
+                                Play Chess
+<!--                                -->                            </a>
+                        </h4>
+                        <div class="align-center well-mid bg-super-light-4 round-border" style="margin: -10px auto 0; width: 180px; padding: 10px 10px 5px">
+                            <strong>287272 chess players already playing</strong>
+                        </div>
+                    </div>
+
+                    <!--                <div class="relative" style="margin-bottom: 25px;">-->
+                    <!--                    <div class="align-center" >-->
+                    <!--                        <a class="btn-large btn" href="--><!--">-->
+                    <!--                            -->                    <!--                        </a>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="align-center well-mid bg-super-light-4 round-border" style="margin: -10px auto 0; width: 160px; padding: 10px 10px 5px">-->
+                    <!--                        <strong>--><!--</strong>-->
+                    <!--                    </div>-->
+                    <!--                </div>-->
+                    <!---->
+                    <!--                <div class="relative">-->
+                    <!--                    <div class="align-center" >-->
+                    <!--                        <a class="btn-large btn" href="--><!--">-->
+                    <!--                            -->                    <!--                        </a>-->
+                    <!--                    </div>-->
+                    <!--                </div>-->
+
+                </div>
+            </div>
+
+            <img src="/i/landing/landing-img.jpg" alt="Chess Board" />
+        </div>
+
+    </div>
+
+</div>
+
+
+<p class="redLine size14 align-center">
+    Chess.Cool is an ultimate chess playing and practicing resource.
+    Play chess, solve chess puzzles, analyze your games with automatic computer analysis and improve your chess skills while playing against the computer!
+</p>
+<div style="margin-top:30px;">
+    <h3 class="align-center">Try playing random chess game with random opponent</h3>
+    <h4 class="align-center">No sign up needed!</h4>
+    <div style="width: 100%;margin:15px auto;">
+            <p class="redLine">
+        
+
+
+            </p>
+
+<noindex>
+<div id="random_container">
+    <div data-rv-show="!hasActive">
+        
+        
+    </div>
+
+    <div data-rv-show="hasActive" class="round-border active-wait-opponent">
+        <div class="hmargin well-small bg-super-light-1">
+            Time control: <strong data-rv-text="userActive.is_random && 'Random' || userActive.limit"></strong>,
+            <br />
+            Your colour: <strong data-rv-text="userActive.is_random && 'Random' || userActive.color"></strong>
+            <br />
+            Game type:
+            <strong data-rv-text="userActive.chess_type==0 && 'Classic chess' || 'Fischer chess'"></strong>
+        </div>
+        <div class="hmargin random-waiting">
+            <div class="hmargin-bottom"><img src="http://chess.cool/i/loading_s.gif" /></div>
+            Waiting for opponent, <br /> please wait...        </div>
+        <div>
+            <a data-rv-on-click="cancel()" class="btn btn-mini" href="javascript:;">Cancel</a>
+        </div>
+    </div>
+
+    <div data-rv-show="!hasActive && gameStarted">
+        <div class="size18 align-center" style="margin:30px 0">
+            Opponent found, game will start in few seconds!        </div>
+        <div class="hmargin align-center size18"><strong data-rv-text="countdown"></strong></div>
+    </div>
+
+    <div data-rv-show="!hasActive && !gameStarted" class="custom-game-controls">
+        <div class="random-actives-form-container pull-left">
+            <a href="#" class="btn btn-success hide mobile-create-game-toggler">Create Game</a>
+            <form class="form-horizontal random-game-form" method="post">
+                <fieldset class="bg-light-1">
+                    <div class="clearfix"></div>
+                    <div class="hmargin form-fields">
+                            <div class="control-group ">
+        <label class="control-label">Time control</label>
+        <div class="controls">
+            <select id="new_game_limit" name="limit"><option value="">Random</option><option value="1">1m/move</option><option value="2">3m/move</option><option value="3">5m/move</option><option value="32">1m/game +1s/move</option><option value="18">2m/game +5s/move</option><option value="33">2m/game +1s/move</option><option value="34">3m/game +0s/move</option><option value="31">3m/game +1s/move</option><option value="19">4m/game +1s/move</option><option value="29" selected>5m/game +0s/move</option><option value="10">5m/game +10s/move</option><option value="28">6m/game +1s/move</option><option value="35">10m/game +0s/move</option><option value="36">15m/game +0s/move</option><option value="37">20m/game +0s/move</option></select>
+            
+            
+        </div>
+    </div>                            <div class="control-group ">
+        <label class="control-label">Your colour</label>
+        <div class="controls">
+                <div>
+        <div class="btn-group" data-toggle-name="color" data-toggle="buttons-radio" >
+            <button type="button" value="0" class="btn" data-toggle="button" data-input-id="new_game_color">White</button><button type="button" value="1" class="btn" data-toggle="button" data-input-id="new_game_color">Black</button><button type="button" value="-1" class="btn active" data-toggle="button" data-input-id="new_game_color">Random</button>
+        </div>
+        <input id="new_game_color" type="hidden" name="color" value="-1" />
+        <div class="clearfix"></div>
+    </div>
+            
+            
+        </div>
+    </div>                            <div class="control-group ">
+        <label class="control-label">Game type</label>
+        <div class="controls">
+                <div>
+        <div class="btn-group" data-toggle-name="type" data-toggle="buttons-radio" >
+            <button type="button" value="0" class="btn active" data-toggle="button" data-input-id="new_game_type">Classic</button><button type="button" value="1" class="btn" data-toggle="button" data-input-id="new_game_type">Fischer chess</button>
+        </div>
+        <input id="new_game_type" type="hidden" name="type" value="0" />
+        <div class="clearfix"></div>
+    </div>
+            
+            
+        </div>
+    </div>
+                    </div>
+                    <div class="form-actions">
+                        <div class="hmargin-bottom">
+
+                                                            <button type="button" data-rv-on-click="createGame()" class="btn btn-primary">Create Game</button>
+                            
+                        </div>
+                                                <div class="hmargin-bottom">
+                            <button title="Time control and colour will be random! Try your luck!" type="button" data-rv-on-click="createGame(true)" class="tooltip-left btn btn-success">Play a random game!</button>
+                        </div>
+                                                                            <a class="btn btn-color-1" href="https://chess.cool/user/reg.html">More features</a>
+                                            </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="random-actives-list pull-left">
+            <div data-rv-show="games.length==0" class="no-random-actives">No available games at the moment.</div>
+            <div data-rv-show="games.length>0" class="random-actives-header">Available games:</div>
+            <div data-rv-each-game="games">
+                <div data-rv-class-bg-super-light-4="$index%2==0" style="padding: 3px;" class="random-active-in-list">
+                    <div class="pull-left random-control-list">
+                        <i class="icon-time"></i> <span data-rv-text="game.limit"></span>
+                        <span data-rv-show="game.chess_type==1">
+                            <br />
+                            <i class="icon-info-sign"></i> <strong>Fischer chess</strong>
+                        </span>
+                    </div>
+                    <div class="pull-right">
+                        <a href="javascript:;" data-rv-on-click="join(game.id)" class="btn">Play <span data-rv-text="game.color_id==0 && 'black' || 'white'"></span></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+</div>
+</noindex>
+
+<script>
+    var pageType = 'site';
+    var sandbox = 'false';
+    var sandboxKey = '';
+    var reqParams = {
+        sk: sandboxKey,
+        sandbox: sandbox,
+        pageType: pageType
+    };
+    var req_s = "pageType="+pageType;
+    if (typeof embed_params != 'undefined') {
+        req_s = req_s + "&" + embed_params;
+    }
+    var limits = {"1":{"id":"1","limit_time":"60","plus":"0","limit_type":"0","text":"1m\/move"},"2":{"id":"2","limit_time":"180","plus":"0","limit_type":"0","text":"3m\/move"},"3":{"id":"3","limit_time":"300","plus":"0","limit_type":"0","text":"5m\/move"},"32":{"id":"32","limit_time":"60","plus":"1","limit_type":"1","text":"1m\/game +1s\/move"},"18":{"id":"18","limit_time":"120","plus":"5","limit_type":"1","text":"2m\/game +5s\/move"},"33":{"id":"33","limit_time":"120","plus":"1","limit_type":"1","text":"2m\/game +1s\/move"},"34":{"id":"34","limit_time":"180","plus":"0","limit_type":"1","text":"3m\/game +0s\/move"},"31":{"id":"31","limit_time":"180","plus":"1","limit_type":"1","text":"3m\/game +1s\/move"},"19":{"id":"19","limit_time":"240","plus":"1","limit_type":"1","text":"4m\/game +1s\/move"},"29":{"id":"29","limit_time":"300","plus":"0","limit_type":"1","text":"5m\/game +0s\/move"},"10":{"id":"10","limit_time":"300","plus":"10","limit_type":"1","text":"5m\/game +10s\/move"},"28":{"id":"28","limit_time":"360","plus":"1","limit_type":"1","text":"6m\/game +1s\/move"},"35":{"id":"35","limit_time":"600","plus":"0","limit_type":"1","text":"10m\/game +0s\/move"},"36":{"id":"36","limit_time":"900","plus":"0","limit_type":"1","text":"15m\/game +0s\/move"},"37":{"id":"37","limit_time":"1200","plus":"0","limit_type":"1","text":"20m\/game +0s\/move"}};
+</script>
+
+
+    </div>
+</div>
+    </div>
+
+    <div>
+            </div>
+
+    <div class="align-center online-users-count">
+        <span id="online_users_count"></span> online.
+        <span>Server response time <span id="response_time">-</span>.</span>
+    </div>
+
+</div>
+
+
+<div class="footer-prepend"></div>
+
+<footer>
+    <div>
+        &copy; 2014-2020 Chess.cool
+        | <a href="https://chess.cool/feedback.html">Feedback</a>
+        | <a href="https://chess.cool/rules.html">Terms of Service (Site Rules)</a>
+        | <a href="https://chess.cool/privacy.html">Privacy Policy</a>
+    </div>
+</footer>
+</div>
+
+
+
+<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://chess.cool/play/index.html?action=limits_lang_js&lang=en&834"></script>
+<script type="text/javascript" src="https://chess.cool/js_locale_messages.js.php?834"></script>
+<script type="text/javascript" src="http://chess.cool/cache/merged-1_cool_main_u-834.js"></script>
+<script type="text/javascript" src="http://chess.cool/cache/merged-playrandom-834.js"></script>
+
+
+
+<script>
+        i18n.translator.add(App.locales.en_US);
+        $(function() {
+        var viewPortWidth = null;
+        var loadOnlineUsers = function() {$("#online_users_count").load("https://chess.cool/online_count.html?r="+(new Date().getTime()))};
+        loadOnlineUsers();
+        setInterval(loadOnlineUsers, 20000);
+        if (viewPortWidth && $(window).width() < viewPortWidth) {
+            $("meta[name=viewport]").attr("content", "width="+viewPortWidth);
+        }
+    });
+</script>
+<div onmouseout="uInfoOut()" onmouseover="clearTimeout(timer1);" id="uInfo" class="well-small bg-super-light-2 box-shadow"></div>
+</body>
+</html>
